@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="theme-color" content="#1b4fd6">
+<title>Saevona</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#1b4fd6;color:#fff;height:100vh;display:flex;align-items:center;justify-content:center}
+.splash{text-align:center;padding:20px}
+.logo{font-size:32px;font-weight:900;letter-spacing:2px;margin-bottom:8px}
+.tagline{font-size:12px;opacity:.8;margin-bottom:30px}
+.spinner{width:40px;height:40px;border:3px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 20px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading{font-size:13px;opacity:.9}
+</style>
+</head>
+<body>
+<div class="splash">
+<div class="spinner"></div>
+<div class="logo">SAEVONA</div>
+<div class="tagline">Digital Nusantara</div>
+<div class="loading">Memuat aplikasi...</div>
+</div>
+<script>
+setTimeout(function(){ window.location.replace("https://saevona.cloud/login.php"); }, 1500);
+</script>
+</body>
+</html>
